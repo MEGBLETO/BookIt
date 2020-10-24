@@ -1,0 +1,52 @@
+.about{
+  height: 80vh;
+  display: flex;
+  background-color: #333;
+  color: #fff;
+}
+
+
+.image{
+  flex: 1 1 40rem;
+}
+
+.look{
+
+width: 100%;  
+object-fit: cover;
+height: 100%;
+}
+
+.text{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  flex: 1 1 40rem;
+  padding: 15px;
+
+ 
+
+p{
+  line-height: 1.5;
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+}
+
+
+@media screen and (max-width: 500px){
+.about{
+  height: 150vh;
+  flex-direction: column;
+}
+
+.text{
+  order: -1;
+}
+
+
+}

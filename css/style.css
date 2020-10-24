@@ -1,0 +1,583 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.current {
+  color: #01883c;
+}
+
+/*Bar de navigation*/
+nav {
+  position: fixed;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  place-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #01883c;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav ul {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.logo {
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+@media screen and (max-width: 1100px) {
+  ul {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    height: 12vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+/*Showcase*/
+.showcase {
+  background: url(../img/showcase.jpg) center center/cover no-repeat;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  text-align: center;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.showcase-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+  width: 600px;
+  height: 600px;
+}
+
+.showcase-content h1 {
+  padding-bottom: 10px;
+  font-size: 3rem;
+}
+
+.showcase-content p {
+  padding: 15px;
+}
+
+.showcase-content button {
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  .showcase h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/*Service*/
+.service {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+}
+
+.entete {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.service-containt {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: #333;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+  place-items: center;
+  grid-gap: 10px;
+}
+
+.item1 {
+  border: 2px solid black;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+  text-align: center;
+  background-color: #f3f3f3;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.item1 i {
+  padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .service {
+    height: 115vh;
+  }
+  .service-containt {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .item1 {
+    width: 80%;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .service {
+    height: 115vh;
+  }
+  .item1 {
+    width: 80%;
+    height: 150px;
+  }
+}
+
+/*Formulaire*/
+.formulaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #333;
+  height: 100vh;
+  background: url(../img/showcase.jpg) center center/cover;
+}
+
+.form-containt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  height: 70%;
+  padding: 15px;
+  background-color: #fff;
+  color: black;
+}
+
+.form-containt p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-containt .formh1 {
+  font-family: 'Kaushan Script', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-containt form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-containt form label {
+  font-weight: bold;
+  padding: 5px;
+}
+
+.form-containt form input {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-containt form button {
+  width: 100px;
+  padding: 15px;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.form-containt .formlink {
+  color: red;
+  cursor: pointer;
+}
+
+.form-containt .formlink:hover {
+  color: #01883c;
+}
+
+@media screen and (max-width: 500px) {
+  .formulaire {
+    height: 110vh;
+  }
+  .form-containt {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+/*about*/
+.about {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #333;
+  color: #fff;
+}
+
+.image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.look {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  padding: 15px;
+}
+
+.text p {
+  line-height: 1.5;
+  padding-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .about {
+    height: 150vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .text {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+/*Footer*/
+.footer {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icons i {
+  padding: 5px;
+}
+
+/*Formulaire de la page d'inscription*/
+.formulaire-inscription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #333;
+  height: 150vh;
+  background: url(../img/showcase.jpg) center center/cover;
+}
+
+.formulaire-contenaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  height: 90%;
+  padding: 15px;
+  background-color: #fff;
+  color: black;
+}
+
+.formulaire-contenaire p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.formulaire-contenaire .formh1 {
+  font-family: 'Kaushan Script', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formulaire-contenaire form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formulaire-contenaire form label {
+  font-weight: bold;
+  padding: 5px;
+}
+
+.formulaire-contenaire form input {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.formulaire-contenaire form button {
+  width: 100px;
+  padding: 15px;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.formulaire-contenaire .formlink {
+  color: red;
+  cursor: pointer;
+}
+
+.formulaire-contenaire .formlink:hover {
+  color: #01883c;
+}
+
+.orgcivil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+}
+
+.formh12 {
+  padding-bottom: 20px;
+}
+
+/*Pour les petits ecrans*/
+@media screen and (max-width: 500px) {
+  .formulaire-inscription {
+    height: 150vh;
+  }
+  .formulaire-contenaire {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .formulaire-inscription {
+    height: 200vh;
+  }
+  .formulaire-contenaire {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .formulaire-inscription {
+    height: 220vh;
+  }
+  .formulaire-contenaire {
+    width: 70%;
+    height: 70%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

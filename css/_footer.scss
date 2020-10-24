@@ -1,0 +1,23 @@
+.footer{
+  height: 10vh;
+  display: flex;
+}
+
+.copyright{
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: center;
+   align-items: center;
+}
+
+.icons{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex: 1 1 40rem;
+  align-items: center;
+
+  i{
+    padding:5px ;
+  }
+}

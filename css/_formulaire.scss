@@ -1,0 +1,88 @@
+.formulaire{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+  background-color: #333;
+  height: 100vh;
+  background: url(../img/showcase.jpg) center center/cover;
+}
+
+
+.form-containt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  height: 70%;
+  padding: 15px;
+
+  background-color: #fff;
+  color: black;
+
+  p{
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .formh1{
+    font-family: 'Kaushan Script', cursive;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+ label{
+   font-weight: bold;
+   padding: 5px;
+ }
+
+    
+    input{
+      display: inline-block;
+      margin-left: 5px;
+      margin-right:  5px;
+      padding: 15px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    button{
+      width: 100px;
+      padding: 15px;
+      cursor: pointer;
+      margin: 10px auto;
+    }
+  }
+
+  .formlink{
+    color: red;
+    cursor: pointer;
+  }
+  
+  .formlink:hover{
+        color: #01883c;
+      }
+}
+
+
+@media screen and (max-width: 500px){
+  
+  
+  .formulaire{
+    height: 110vh;
+  }
+
+
+    .form-containt{
+      width:70%;
+      height: 70%;
+
+    }
+}

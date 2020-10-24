@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+.current{
+  color: #01883c;
+}
+
+/*Bar de navigation*/
+  @import './nav';
+
+  /*Showcase*/
+
+  @import './showcase';
+
+  /*Service*/
+
+  @import './service';
+
+  /*Formulaire*/
+
+  @import './formulaire';
+
+  /*about*/
+
+  @import './about';
+
+  /*Footer*/
+  @import './footer';
+
+  /*Formulaire de la page d'inscription*/
+
+   @import './registrationform';
