@@ -1,4 +1,5 @@
 .service{
+  background-color: #fff;
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -20,7 +21,7 @@
   color: white;
   background-color: #333;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 10px;
   place-items: center;
 grid-gap: 10px;}
@@ -58,7 +59,7 @@ grid-gap: 10px;}
   }
 
 .service-containt{
-  grid-template-columns: repeat(1,1fr);
+  grid-template-columns: 1fr;
 }
 
 .item1{

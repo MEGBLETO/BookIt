@@ -40,3 +40,15 @@
   /*Formulaire de la page d'inscription*/
 
    @import './registrationform';
+
+   /*Profile page*/
+
+   @import './profile';
+
+   /*Pour modifier le profile utillisateur*/
+
+   @import './modprofile';
+
+
+   //pour pouvoir  choisir les salles
+   @import './city';

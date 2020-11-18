@@ -1,4 +1,5 @@
 .formulaire-inscription{
+  padding-top: 12%;
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -26,6 +27,7 @@
   }
   
   .formh1{
+    padding-top: 10px;
     font-family: 'Kaushan Script', cursive;
     display: flex;
     text-align: center;
@@ -82,6 +84,11 @@
 }
 
 
+.error{
+  color: red;
+}
+
+
 
 
 /*Pour les petits ecrans*/
@@ -105,13 +112,13 @@
   
   
   .formulaire-inscription{
-    height: 200vh;
+    height: 250vh;
   }
 
 
     .formulaire-contenaire{
       width: 70%;
-      height: 70%;
+      height: 90%;
 
     }
 }

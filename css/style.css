@@ -17,7 +17,6 @@ body {
 
 /*Bar de navigation*/
 nav {
-  position: fixed;
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,6 +51,12 @@ nav ul {
           flex: 1 1 30rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .logo {
@@ -135,6 +140,7 @@ nav ul {
 
 /*Service*/
 .service {
+  background-color: #fff;
   height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,8 +175,8 @@ nav ul {
   background-color: #333;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 10px;
   place-items: center;
   grid-gap: 10px;
@@ -208,8 +214,8 @@ nav ul {
     height: 115vh;
   }
   .service-containt {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   .item1 {
     width: 80%;
@@ -407,6 +413,7 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #fff;
 }
 
 .copyright {
@@ -446,6 +453,7 @@ nav ul {
 
 /*Formulaire de la page d'inscription*/
 .formulaire-inscription {
+  padding-top: 12%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,6 +495,7 @@ nav ul {
 }
 
 .formulaire-contenaire .formh1 {
+  padding-top: 10px;
   font-family: 'Kaushan Script', cursive;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -550,6 +559,10 @@ nav ul {
   padding-bottom: 20px;
 }
 
+.error {
+  color: red;
+}
+
 /*Pour les petits ecrans*/
 @media screen and (max-width: 500px) {
   .formulaire-inscription {
@@ -563,11 +576,11 @@ nav ul {
 
 @media screen and (max-width: 360px) {
   .formulaire-inscription {
-    height: 200vh;
+    height: 250vh;
   }
   .formulaire-contenaire {
     width: 70%;
-    height: 70%;
+    height: 90%;
   }
 }
 
@@ -578,6 +591,417 @@ nav ul {
   .formulaire-contenaire {
     width: 70%;
     height: 70%;
+  }
+}
+
+/*Profile page*/
+.profile-container {
+  height: 130vh;
+  width: 100%;
+  background: url(../img/showcase.jpg) center center/cover;
+}
+
+.profile-container2 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  place-items: center;
+}
+
+.welcome {
+  position: absolute;
+  background-color: transparent;
+  width: 600px;
+  height: 200px;
+  place-items: center;
+  top: 12%;
+  right: 0;
+  color: #fff;
+}
+
+.welcome p {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.showcase-profile {
+  position: relative;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 12%;
+  height: 1500px;
+  width: 85%;
+  background: #fff;
+}
+
+.entete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  place-items: center;
+}
+
+.entete a {
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+}
+
+.ta {
+  letter-spacing: 3px;
+  padding: 20px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.details {
+  font-weight: bold;
+  padding: 20px;
+  border: 2px dotted black;
+}
+
+.element {
+  height: 70%;
+  background-color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: start;
+}
+
+.reservation {
+  position: relative;
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+  cursor: pointer;
+  padding: 20px;
+  width: 200px;
+  margin: 20px auto;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+.reservation:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.btn2 {
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+  cursor: pointer;
+  padding: 20px;
+  width: 200px;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+@media screen and (max-width: 500px) {
+  .welcome {
+    top: 10%;
+    right: 5px;
+  }
+  .welcome p {
+    font-weight: bold;
+    font-size: 15px;
+  }
+}
+
+/*Pour modifier le profile utillisateur*/
+.formulaire-modification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #333;
+  height: 120vh;
+  background: url(../img/showcase.jpg) center center/cover;
+}
+
+.formulaire-contenaire1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  height: 90%;
+  padding: 15px;
+  background-color: #fff;
+  color: black;
+}
+
+.formulaire-contenaire1 p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.formulaire-contenaire1 .formh1 {
+  padding-top: 10px;
+  font-family: 'Kaushan Script', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formulaire-contenaire1 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formulaire-contenaire1 form label {
+  font-weight: bold;
+  padding: 5px;
+}
+
+.formulaire-contenaire1 form input {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.formulaire-contenaire1 form button {
+  width: 100px;
+  padding: 15px;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.formulaire-contenaire1 .formlink {
+  color: red;
+  cursor: pointer;
+}
+
+.formulaire-contenaire1 .formlink:hover {
+  color: #01883c;
+}
+
+.orgcivil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+}
+
+.formh12 {
+  padding-bottom: 20px;
+}
+
+.error {
+  color: red;
+}
+
+/*Pour les petits ecrans*/
+@media screen and (max-width: 500px) {
+  .formulaire-inscription {
+    height: 150vh;
+  }
+  .formulaire-contenaire {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .formulaire-inscription {
+    height: 250vh;
+  }
+  .formulaire-contenaire {
+    width: 70%;
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .formulaire-inscription {
+    height: 220vh;
+  }
+  .formulaire-contenaire {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+body {
+  height: 100%;
+}
+
+.showcase-salle {
+  padding-top: 10%;
+  height: 150vh;
+  width: 100%;
+  background: url(../img/showcase.jpg) center center/cover;
+}
+
+.paris {
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.entete-ville {
+  padding: 20px;
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.entete-ville h1 {
+  color: #fff;
+}
+
+.salles {
+  cursor: pointer;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.item {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 400px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.item:hover img {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  opacity: 0.6;
+}
+
+.image {
+  width: 100%;
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 70rem;
+          flex: 3 1 70rem;
+  overflow: hidden;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  /*background: url(../img/paris.jpg) center center/cover;*/
+}
+
+.city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+}
+
+.city h1 {
+  letter-spacing: 2px;
+}
+
+.ville1 {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.welcome2 {
+  position: absolute;
+  background-color: transparent;
+  width: 600px;
+  height: 200px;
+  place-items: center;
+  top: 12%;
+  right: 0;
+  color: #fff;
+}
+
+@media screen and (max-width: 1100px) {
+  .showcase-salle {
+    padding-top: 16%;
+  }
+  .welcome2 {
+    position: absolute;
+    background-color: transparent;
+    width: 600px;
+    height: 200px;
+    place-items: center;
+    top: 15%;
+    right: 0;
+    color: #fff;
   }
 }
 /*# sourceMappingURL=style.css.map */

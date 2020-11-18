@@ -1,0 +1,130 @@
+
+.profile-container{
+  height: 130vh;
+  width: 100%;
+  background: url(../img/showcase.jpg) center center/cover;
+  
+}
+
+.profile-container2{
+  width: 100%;
+  height: 100%;
+  display: flex;
+   flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  place-items: center;
+}
+
+.welcome{
+  position: absolute;
+  background-color: transparent;
+  width: 600px;
+  height: 200px;
+  place-items: center;
+  top: 12%;
+  right: 0;
+  color: #fff;
+}
+
+.welcome p{
+  font-weight:  bold;
+  font-size: 1rem;
+}
+
+
+.showcase-profile{
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  top: 12%;
+  height: 1500px;
+  width: 85%;
+  background: #fff;
+}
+
+
+.entete{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  place-items: center;
+
+    a{
+      font-weight: bold;
+      text-decoration: none;
+      color: red;
+    }
+}
+
+.ta{
+  letter-spacing: 3px;
+  padding: 20px;
+  font-family: 'Kaushan Script', cursive;
+
+}
+
+
+.details{
+  font-weight: bold;
+  padding: 20px;
+  border:  2px dotted black;
+
+
+}
+
+.element{
+  height: 70%;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: flex-start;
+  text-align: start;
+
+}
+
+.reservation{
+  position: relative;
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+  cursor: pointer;
+  padding: 20px;
+  width: 200px;
+  margin: 20px auto;
+  transition: .1s ease-in-out;
+}
+
+
+.reservation:hover{
+  transform: scale(1.2);
+}
+
+
+.btn2{
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+  cursor: pointer;
+  padding: 20px;
+  width: 200px;
+  transition: .1s ease-in-out;
+}
+
+
+
+@media screen and(max-width: 500px){
+
+  .welcome {
+    top: 10%;
+    right: 5px;  
+}
+
+  .welcome p{
+    font-weight:  bold;
+    font-size: 15px;
+  
+  }
+}
